@@ -1,1 +1,5 @@
-
+1- Início
+2- Leia n; #Entrada
+3- X = 9 x n = (n-1) x 10 + (10 - n); #Processamento
+4- Imprima X.
+5- Saída
