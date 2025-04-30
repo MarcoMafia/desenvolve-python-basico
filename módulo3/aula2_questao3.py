@@ -1,5 +1,0 @@
-idade= int (input ("Digite sua idade: "))
-jogos_tabuleiros= (input("Já jogou pelo menos 3 jogos de tabuleiro? (Sim ou Não) "))
-jogou_3jogos= (jogos_tabuleiros== "Sim") or (jogos_tabuleiros == "sim")
-vitorias=int(input("Quantos jogos já venceu? "))
-print ("Apto para ingressar no clube de jogos de tabuleiro:",(16 <= idade <= 18) and jogou_3jogos and (vitorias >= 1))
