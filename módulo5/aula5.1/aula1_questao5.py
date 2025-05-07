@@ -1,0 +1,10 @@
+import emoji
+print("Emojis disponíveis: ")
+print(emoji.emojize(":red_heart:"), emoji.demojize(" - :red_heart:"))
+print(emoji.emojize(":thumbs_up:"), emoji.demojize(" - :thumbs_up:"))
+print(emoji.emojize(":thinking_face:"), emoji.demojize(" - :thinking_face:"))
+print(emoji.emojize(":partying_face:"), emoji.demojize(" - :partying_face:"))
+frase_codificada= input("\nDigite uma frase e ela será emojizada: ")
+frase_emojizada= emoji.emojize(frase_codificada, language='alias')
+print("Frase emojizada: ")
+print(frase_emojizada)
