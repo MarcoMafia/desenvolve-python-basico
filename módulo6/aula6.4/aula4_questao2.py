@@ -1,0 +1,5 @@
+frase= input("Digite uma frase: ")
+vogais = sorted([l for l in frase if l in 'aeiouAEIOU'])
+consoantes = sorted([l for l in frase if l not in 'aeiouAEIOU '])
+print("Vogais: ", vogais)
+print("Consoantes: ", consoantes)
