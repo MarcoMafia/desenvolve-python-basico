@@ -1,0 +1,83 @@
+--- Introdução ---
+
+
+O sistema foi desenvolvido para gerenciar os dados de uma loja de bicicletas, especializada em três tipos de serviços  da oficina iniciais:
+- Alinhamento da roda (cada roda)
+- Substituição da câmara
+- Remendo do pneu
+
+O sistema é voltado para três tipos de usuários:
+- Gerente: Acesso completo a todas as funcionalidades.
+- Funcionário: Pode gerenciar produtos, mas não gerenciar usuários.
+- Cliente: Pode apenas consultar os produtos e serviços disponíveis.
+
+O objetivo do sistema é facilitar o controle de usuários e serviços para os funcionários da loja. Além disso, é desenvolvido para a consulta dos produtos e serviços disponíveis pela loja, de forma a auxiliar os clientes.
+
+
+--- Implementação ---
+
+
+1. Usuários
+
+Estrutura de dados:
+
+A lista de usuários é carregada como uma *lista de dicionários*, onde cada usuário é representado assim:
+```python
+{"usuario": "nome", "senha": "senha", "permissao": "cliente/funcionario/gerente"}
+
+Estrutura do arquivo usuarios.txt:
+usuario,senha,permissao
+admin,000,gerente
+Marco,777,cliente
+Joana,123,funcionario
+
+Funcionalidades (CRUD):
+Create: cadastrar_usuario()
+Read: ler_usuarios() e exibição ao fazer login
+Update: atualiza_senha()
+Delete: excluir_usuario()
+
+
+
+
+2. Produtos e Serviços
+
+Estrutura de dados:
+A lista de produtos é carregada como lista de dicionários:
+{"codigo": "001", "nome": "Alinhamento da roda (cada roda)", "preco": 50.00, "quantidade": 1}
+
+Estrutura do arquivo produtos&serviços.txt:
+codigo,nome,preco,quantidade
+001,Alinhamento da roda (cada roda),50.00,1
+002,Substituição da câmara,40.00,1
+003,Remendo do pneu,25.00,1
+
+Funcionalidades (CRUD):
+Create: cadastrar_produto()
+Read: ler_produtos()
+Update: atualizar_produto()
+Delete: excluir_produto()
+
+Funcionalidades adicionais:
+Busca específica: buscar_produto() permite buscar por nome ou código.
+Ordenação por nome: listar_ordenado("nome")
+Ordenação por preço: listar_ordenado("preco")
+
+
+
+--- Conclusão ---
+
+
+Dificuldades:
+- Identificar e corrigir os erros de sintaxe ou de lógica do código.
+- Manipulção de arquivos com o módulo os
+- Garantir que uma função funcione à cada chamada dela
+
+Pontos positivos:
+- Sistema muito legível
+- Modificações nos produtos ou serviços fáceis de realizar
+- Organização do código
+
+O que poderia ser diferente:
+- Interface gráfica
+- Dividir a solução em múltiplos arquivos, ao invés de se concentrar em um único script

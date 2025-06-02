@@ -1,0 +1,3 @@
+001,Alinhamento da roda (cada roda),50.0,1
+002,Substituição da câmara,40.0,1
+003,Remendo do pneu,25.0,1
